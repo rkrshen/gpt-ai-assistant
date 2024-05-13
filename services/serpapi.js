@@ -26,11 +26,11 @@ client.interceptors.response.use(handleFulfilled, (err) => {
 });
 
 const search = ({
-  // gl = config.SERPAPI_LOCATION,
+  gl = config.SERPAPI_LOCATION,
   q,
 }) => client.get('/search', {
   params: {
-    // gl,
+    gl,
     q,
   },
 });
